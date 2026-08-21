@@ -3,6 +3,10 @@ function UserInput({
   setInitialInvestment,
   inputAnnualInvestment,
   setAnnualInvestment,
+  inputExpectedReturn,
+  setExpectedReturn,
+  inputDuration,
+  setDuration,
 }) {
   return (
     <div id="user-input">
@@ -18,6 +22,14 @@ function UserInput({
         value={inputAnnualInvestment}
         onChange={setAnnualInvestment}
       />
+      <label>Expected Return</label>
+      <input
+        type="number"
+        value={inputExpectedReturn}
+        onChange={setExpectedReturn}
+      />
+      <label>Duration</label>
+      <input type="number" value={inputDuration} onChange={setDuration} />
     </div>
   );
 }
