@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import UserInput from "./components/UserInput";
-import { calculateInvestmentResults, formatter } from "./util/investment";
+import { calculateInvestmentResults } from "./util/investment";
 import Results from "./components/Results";
 
 function App() {

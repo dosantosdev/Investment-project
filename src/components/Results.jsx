@@ -9,6 +9,7 @@ function Results({ results }) {
           <th>Interest Earned</th>
           <th>Investment Value</th>
           <th>Annual Investment</th>
+          <th>Invested Capital</th>
         </tr>
       </thead>
       <tbody>
@@ -18,6 +19,7 @@ function Results({ results }) {
             <td>{formatter.format(annualData.interest)}</td>
             <td>{formatter.format(annualData.valueEndOfYear)}</td>
             <td>{formatter.format(annualData.annualInvestment)}</td>
+            <td>{formatter.format(annualData.investedCapital)}</td>
           </tr>
         ))}
       </tbody>
